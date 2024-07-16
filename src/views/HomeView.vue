@@ -142,7 +142,7 @@ export default {
   },
   async mounted() {
     this.loading = true
-    await axios.get('https://seo.local/api/cordun/ion').then(async (response) => {
+    await axios.get('https://api.foxapp.net/api/restapi/campione').then(async (response) => {
       let data = JSON.parse(response.data.data)
       console.log(data)
       this.operatore = data.operatore
