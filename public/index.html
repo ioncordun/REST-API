@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "<%= BASE_URL %>",
+                "name": "<%= process.env.BASE_NAME %>",
+                "logo": "<%= BASE_URL %>/assets/img/android-chrome-512x5_c484_11.png",
+                "email": "contact@<%= BASE_URL %>",
+                "sameAs": [
+                    "https://www.facebook.com/<%= BASE_URL %>/",
+                    "https://twitter.com/<%= BASE_URL %>"
+                ],
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "contactType": "customer service",
+                        "url": "https://<%= BASE_URL %>/contact",
+                        "email": "contact@<%= BASE_URL %>"
+                    }
+                ]
+            }
+        ]
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.freetogame.com",
+                        "name": "Home"
+                    }
+                }
+            ]
+        }
+    </script>
+
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" media="print"
+      onload="this.media='all'">
+</body>
+</html>
