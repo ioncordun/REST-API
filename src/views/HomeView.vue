@@ -24,7 +24,7 @@
                 <input type="text" class="form-control" id="ID_Stazione" v-model="stations.id_stazione" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
-                <label for="ID Stazione" class="form-label">Nome Stazione</label>
+                <label for="Nome_Stazione" class="form-label">Nome Stazione</label>
                 <input type="text" class="form-control" id="Nome_Stazione" v-model="stations.nome_stazione" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
@@ -40,7 +40,7 @@
                 <input type="text" class="form-control" id="LNG" v-model="stations.lng" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
-                <label for="Tipo Indirizzo" class="form-label">Tipo Indirizzo</label>
+                <label for="Tipo_Indirizzo" class="form-label">Tipo Indirizzo</label>
                 <input type="text" class="form-control" id="Tipo Indirizzo" v-model="TipoIndirozzo" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
@@ -60,11 +60,11 @@
                 <input type="text" class="form-control" id="Sostenibilita" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
-                <label for="Disponibilità Stazione" class="form-label">Disponibilità Stazione</label>
+                <label for="Disponibilità_Stazione" class="form-label">Disponibilità Stazione</label>
                 <input type="text" class="form-control" id="Disponibilità Stazione" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
-                <label for="Accessibilita Stazione" class="form-label">Accessibilita Stazione</label>
+                <label for="Accessibilita_Stazione" class="form-label">Accessibilita Stazione</label>
                 <input type="text" class="form-control" id="Accessibilita Stazione" placeholder="Another input placeholder">
               </div>
 
@@ -72,16 +72,16 @@
             <div class="col-6">
               <div class="mb-3">
                 <h3> Punti Prelievo </h3>
-                <label for="ID Punto Prelievo" class="form-label">ID Punto Prelievo</label>
+                <label for="ID_Punto_Prelievo" class="form-label">ID Punto Prelievo</label>
                 <input type="text" class="form-control" id="ID Punto Prelievo" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
-                <label for="Tipologia Punto Prelievo Energia" class="form-label">Tipologia Punto Prelievo Energia</label>
+                <label for="Tipologia_Punto_Prelievo_Energia" class="form-label">Tipologia Punto Prelievo Energia</label>
                 <input type="text" class="form-control" id="Tipologia Punto Prelievo Energia"
                        placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
-                <label for="Potenza Punto Prelievo Energia" class="form-label">Potenza Punto Prelievo Energia</label>
+                <label for="Potenza_Punto_Prelievo_Energia" class="form-label">Potenza Punto Prelievo Energia</label>
                 <input type="text" class="form-control" id="Potenza Punto Prelievo Energia"
                        placeholder="Example input placeholder">
 
