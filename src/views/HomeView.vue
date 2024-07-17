@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-6">
 
-              <h3> Info Statione </h3>
+              <h3> Info Stazione </h3>
               <div class="mb-3">
                 <label for="Operatore" class="form-label">Operatore</label>
                 <input type="text" class="form-control" id="Operatore" v-model="operatore" placeholder="Example input placeholder">
