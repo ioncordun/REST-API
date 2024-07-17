@@ -148,7 +148,7 @@ export default {
       this.operatore = data.operatore
       this.sito_operatore = data.sito_operatore
 
-      this.stations.id_stazione = data.stations.id_stazione
+      this.stations.id_stazione = data.id_stazione
       this.stations.nome_stazione = data.nome_stazione
       this.stations.cap = data.cap
       this.stations.lat = data.lat
