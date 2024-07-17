@@ -20,12 +20,12 @@
                 <input type="url" class="form-control" id="Sito Operatore" v-model="sito_operatore" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
-                <label for="ID_Statione" class="form-label">ID Statione</label>
-                <input type="text" class="form-control" id="ID_Statione" v-model="stations.id_stazione" placeholder="Another input placeholder">
+                <label for="ID_Stazione" class="form-label">ID Stazione</label>
+                <input type="text" class="form-control" id="ID_Stazione" v-model="stations.id_stazione" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
-                <label for="ID Statione" class="form-label">Nome Statione</label>
-                <input type="text" class="form-control" id="Nome_Statione" v-model="stations.nome_stazione" placeholder="Another input placeholder">
+                <label for="ID Stazione" class="form-label">Nome Stazione</label>
+                <input type="text" class="form-control" id="Nome_Stazione" v-model="stations.nome_stazione" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="CAP" class="form-label">CAP</label>
@@ -148,7 +148,7 @@ export default {
       this.operatore = data.operatore
       this.sito_operatore = data.sito_operatore
 
-      this.stations.id_stazione = data.id_stazione
+      this.stations.id_stazione = data.stations.id_stazione
       this.stations.nome_stazione = data.nome_stazione
       this.stations.cap = data.cap
       this.stations.lat = data.lat
