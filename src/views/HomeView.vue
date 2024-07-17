@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-6">
 
-              <h3> Info Stazione </h3>
+              <h3> Info Statione </h3>
               <div class="mb-3">
                 <label for="Operatore" class="form-label">Operatore</label>
                 <input type="text" class="form-control" id="Operatore" v-model="operatore" placeholder="Example input placeholder">
@@ -41,7 +41,7 @@
               </div>
               <div class="mb-3">
                 <label for="Tipo_Indirizzo" class="form-label">Tipo Indirizzo</label>
-                <input type="text" class="form-control" id="Tipo Indirizzo" v-model="TipoIndirozzo" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Tipo Indirizzo" v-model="stations.tipo_indirizzo" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Indirizzo" class="form-label">Indirizzo</label>
@@ -150,6 +150,7 @@ export default {
 
       this.stations.id_stazione = data.id_stazione
       this.stations.nome_stazione = data.nome_stazione
+      this.stations.tipo_indirizzo = data.stations.tipo_indirizzo??'missing'
       this.stations.cap = data.cap
       this.stations.lat = data.lat
       this.stations.lng = data.lng
