@@ -142,7 +142,7 @@ export default {
   },
   async mounted() {
     this.loading = true
-    await axios.get('https://api.foxapp.net/api/restapi/campione').then(async (response) => {
+    await axios.get('https://drive.google.com/file/d/1_XMB3N6neQUMF1b1qRhZeYfyICd-rq-U/view?usp=sharing').then(async (response) => {
       let data = JSON.parse(response.data.data)
       console.log(data)
       this.operatore = data.operatore
