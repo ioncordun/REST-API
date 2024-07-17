@@ -144,7 +144,8 @@ export default {
     this.loading = true
     let key = 'AIzaSyBxHDaCvAVicJ58EnSc7viLNE9SVJhD9L0'
     let id_file = '13lIPOGH3Wm3VEOqp7UbubBTCL3nE24gY'
-    //
+
+    //https://www.googleapis.com/drive/v3/files/13lIPOGH3Wm3VEOqp7UbubBTCL3nE24gY/?alt=media&key=AIzaSyBxHDaCvAVicJ58EnSc7viLNE9SVJhD9L0
     try{
     await axios.get('https://www.googleapis.com/drive/v3/files/' + id_file + '/?alt=media&key=' + key').then(async (response) => {
       let data = response.data
