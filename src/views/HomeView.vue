@@ -142,7 +142,7 @@ export default {
   },
   async mounted() {
     this.loading = true
-    await axios.get('https://drive.google.com/file/d/1I74XL8wBVUG9c6w_IOG75c6imOFUwFQJ/view?usp=drive_link').then(async (response) => {
+    await axios.get('https://drive.google.com/file/d/1_XMB3N6neQUMF1b1qRhZeYfyICd-rq-U/view?usp=drive_link').then(async (response) => {
       let data = JSON.parse(response.data.data)
       console.log(data)
       this.operatore = data.operatore
