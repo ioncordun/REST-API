@@ -142,11 +142,12 @@ export default {
   },
   async mounted() {
     this.loading = true
-    let key = 'AIzaSyBxHDaCvAVicJ58EnSc7viLNE9SVJhD9L0'
-    let id_file = '13lIPOGH3Wm3VEOqp7UbubBTCL3nE24gY'
+    //let key = 'AIzaSyBxHDaCvAVicJ58EnSc7viLNE9SVJhD9L0'
+    //let id_file = '13lIPOGH3Wm3VEOqp7UbubBTCL3nE24gY'
 
     try{
-      await axios.get('https://www.googleapis.com/drive/v3/files/' + id_file + '/?alt=media&key=' + key ).then(async (response) => {
+     // await axios.get('https://www.googleapis.com/drive/v3/files/' + id_file + '/?alt=media&key=' + key ).then(async (response) => {
+        await axios.get('https://api-campione.ioncordun.workers.dev' ).then(async (response) => {
         let data = response.data
         console.log(data)
         this.operatore = data.operatore
