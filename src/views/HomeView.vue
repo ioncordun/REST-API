@@ -142,8 +142,9 @@ export default {
   },
   async mounted() {
     this.loading = true
+    try{
     await axios.get('https://www.googleapis.com/drive/v3/files/1FLZ-VAQ2-hZWF7F0jG2PjkYbmAO0Q9ad/?alt=media&key=AIzaSyAtrAauy0Bta4uFJ26-cAl6EYojzQ8V4O8').then(async (response) => {
-      let data = JSON.parse(response.data.data)
+      let data = response.data
       console.log(data)
       this.operatore = data.operatore
       this.sito_operatore = data.sito_operatore
@@ -186,7 +187,10 @@ export default {
         }
         */
       this.loading = false
-    })
+      })
+    }catch(e){
+      console.log(e)
+    }
 
 
     //await axios.get(ip_url).then(async (response) => {
