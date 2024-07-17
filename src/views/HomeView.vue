@@ -41,19 +41,19 @@
               </div>
               <div class="mb-3">
                 <label for="Tipo_Indirizzo" class="form-label">Tipo Indirizzo</label>
-                <input type="text" class="form-control" id="Tipo Indirizzo" v-model="stations.tipo_indirizzo" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Tipo Indirizzo" v-model="stations[0].tipo_indirizzo" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Indirizzo" class="form-label">Indirizzo</label>
-                <input type="text" class="form-control" id="Indirizzo" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="Indirizzo" v-model="stations[0].indirizzo" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Comune" class="form-label">Comune</label>
-                <input type="text" class="form-control" id="Comune" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Comune" v-model="stations[0].comune" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Regione" class="form-label">Regione</label>
-                <input type="text" class="form-control" id="Regione" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="Regione" v-model="stations[0].regione" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Sostenibilita" class="form-label">Sostenibilita</label>
@@ -73,7 +73,7 @@
               <div class="mb-3">
                 <h3> Punti Prelievo </h3>
                 <label for="ID_Punto_Prelievo" class="form-label">ID Punto Prelievo</label>
-                <input type="text" class="form-control" id="ID Punto Prelievo" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="ID Punto Prelievo" v-model="stations[0].punti_prelievo[0].id_punto_prelievo" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Tipologia_Punto_Prelievo_Energia" class="form-label">Tipologia Punto Prelievo Energia</label>
@@ -145,56 +145,29 @@ export default {
     let key = 'AIzaSyBxHDaCvAVicJ58EnSc7viLNE9SVJhD9L0'
     let id_file = '13lIPOGH3Wm3VEOqp7UbubBTCL3nE24gY'
 
-    //https://www.googleapis.com/drive/v3/files/13lIPOGH3Wm3VEOqp7UbubBTCL3nE24gY/?alt=media&key=AIzaSyBxHDaCvAVicJ58EnSc7viLNE9SVJhD9L0
     try{
-    await axios.get('https://www.googleapis.com/drive/v3/files/' + id_file + '/?alt=media&key=' + key ).then(async (response) => {
-      let data = response.data
-      console.log(data)
-      this.operatore = data.operatore
-      this.sito_operatore = data.sito_operatore
+      await axios.get('https://www.googleapis.com/drive/v3/files/' + id_file + '/?alt=media&key=' + key ).then(async (response) => {
+        let data = response.data
+        console.log(data)
+        this.operatore = data.operatore
+        this.sito_operatore = data.sito_operatore
 
-      this.stations.id_stazione = data.id_stazione
-      this.stations.nome_stazione = data.nome_stazione
-      this.stations.tipo_indirizzo = data.stations.tipo_indirizzo??'missing'
-      this.stations.cap = data.cap
-      this.stations.lat = data.lat
-      this.stations.lng = data.lng
+        this.stations[0].id_stazione = data.stations[0].id_stazione
+        this.stations[0].nome_stazione = data.stations[0].nome_stazione
+        this.stations[0].tipo_indirizzo = data.stations[0].tipo_indirizzo??'missing'
+        this.stations[0].cap = data.stations[0].cap
+        this.stations[0].lat = data.stations[0].lat
+        this.stations[0].lng = data.stations[0].lng
 
-      /*
-          stations: [
-        {
-          id_stazione: "*********",
-          nome_stazione: "*********",
-          cap: " *********",
-          lat: "*********",
-          lng: "*********",
-          tipo_indirizzo: "via",
-          indirizzo: "*********",
-          comune: "*********",
-          regione: "Lombardia",
-          provincia: "** ",
-          sostenibilita: "*********",
-          disponibilità_stazione: "*********",
-          accessibilità_stazione: " *********",
-          punti_prelievo: [
-            {
-              id_punto_prelievo: "*********",
-              tipologia_punto_prelievo_energia: "**",
-              potenza_punto_prelievo_energia: "*"
-            },
-            {
-              id_punto_prelievo: "*********",
-              tipologia_punto_prelievo_energia: "**",
-              potenza_punto_prelievo_energia: "**"
-            }
-          ]
-        }
-        */
-      this.loading = false
+
+        console.log(data.stations[0].punti_prelievo[0]);
+        this.stations[0].punti_prelievo[0].id_punto_prelievo = data.stations[0].punti_prelievo[0].id_punto_prelievo
+
+        this.loading = false
       })
-  }catch(e){
-    console.log(e)
-  }
+    }catch(e){
+      console.log(e)
+    }
 
     //await axios.get(ip_url).then(async (response) => {
     console.log('mounted')
