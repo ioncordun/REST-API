@@ -57,7 +57,7 @@
               </div>
                <div class="mb-3">
                 <label for="Provincia" class="form-label">Provincia</label>
-                <input type="text" class="form-control" id="Provincia" v-model="stations[0].Provincia" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="Provincia" v-model="stations[0].Provincia" placeholder="??texetExample input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Sostenibilita" class="form-label">Sostenibilita</label>
