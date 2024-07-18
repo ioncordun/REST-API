@@ -55,6 +55,10 @@
                 <label for="Regione" class="form-label">Regione</label>
                 <input type="text" class="form-control" id="Regione" v-model="stations[0].regione" placeholder="Example input placeholder">
               </div>
+               <div class="mb-3">
+                <label for="provincia" class="form-label">Provincia</label>
+                <input type="text" class="form-control" id="Provincia" v-model="stations[0].provincia placeholder="Example input placeholder">
+              </div>
               <div class="mb-3">
                 <label for="Sostenibilita" class="form-label">Sostenibilita</label>
                 <input type="text" class="form-control" id="Sostenibilita" placeholder="Another input placeholder">
