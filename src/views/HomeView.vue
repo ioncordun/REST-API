@@ -170,6 +170,8 @@ export default {
         this.stations[0].sostenibilita = data.stations[0].sostenibilita
         this.stations[0].disponibilità_stazione = data.stations[0].disponibilità_stazione
         this.stations[0].accessibilità_stazione = data.stations[0].accessibilità_stazione
+
+          
           
           
           
@@ -180,7 +182,7 @@ export default {
         console.log(data.stations[0].punti_prelievo[0]);
         this.stations[0].punti_prelievo[0].id_punto_prelievo = data.stations[0].punti_prelievo[0].id_punto_prelievo
           console.log(data.stations[0].punti_prelievo[0]);
-        this.stations[0].punti_prelievo[0].tipologia_punto_prelievo_energia = data.stations[0].punti_prelievo[0].tipologia_punto_prelievo_energia
+        this.stations[0].punti_prelievo[0] = data.stations[0].punti_prelievo[0].tipologia_punto_prelievo_energia
 
         this.loading = false
       })
