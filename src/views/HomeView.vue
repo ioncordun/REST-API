@@ -155,7 +155,7 @@ export default {
 
         this.stations[0].id_stazione = data.stations[0].id_stazione
         this.stations[0].nome_stazione = data.stations[0].nome_stazione
-        this.stations[0].tipo_indirizzo = data.stations[0].tipo_indirizzo??'missing'
+        this.stations[0].tipo_indirizzo = data.stations[0].tipo_indirizzo
         this.stations[0].cap = data.stations[0].cap
         this.stations[0].lat = data.stations[0].lat
         this.stations[0].lng = data.stations[0].lng
