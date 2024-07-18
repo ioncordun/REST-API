@@ -21,7 +21,7 @@
               </div>
               <div class="mb-3">
                 <label for="ID_Stazione" class="form-label">ID Stazione</label>
-                <input type="number" class="form-control" id="ID_Stazione" v-model="stations.id_stazione" placeholder="Another input placeholder">
+                <input type="number" class="form-control" id="ID Stazione" v-model="stations.id_stazione" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Nome_Stazione" class="form-label">Nome Stazione</label>
