@@ -168,8 +168,8 @@ export default {
         this.stations[0].regione = data.stations[0].regione
         this.stations[0].provincia = data.stations[0].provincia
         this.stations[0].sostenibilita = data.stations[0].sostenibilita
-        this.stations[0].disponibilità_stazione = data.stations[0].disponibilità_stazione
-        this.stations[0].accessibilità_stazione = data.stations[0].accessibilità_stazione
+        this.stations[0].disponibilita_stazione = data.stations[0].disponibilita_stazione
+        this.stations[0].accessibilita_stazione = data.stations[0].accessibilita_stazione
 
           
           
