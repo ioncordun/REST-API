@@ -61,11 +61,11 @@
               </div>
               <div class="mb-3">
                 <label for="Sostenibilita" class="form-label">Sostenibilita</label>
-                <input type="text" class="form-control" id="Sostenibilita" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Sostenibilita" v-model="stations[0].sostebilita" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Disponibilita_Stazione" class="form-label">Disponibilita Stazione</label>
-                <input type="text" class="form-control" id="Disponibilità Stazione" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="Disponibilità Stazione" v-model="stations[0].disponibilita_stazione" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Accessibilita_Stazione" class="form-label">Accessibilita Stazione</label>
