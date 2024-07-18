@@ -64,7 +64,7 @@
                 <input type="text" class="form-control" id="Sostenibilita" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
-                <label for="Disponibilità_Stazione" class="form-label">Disponibilità Stazione</label>
+                <label for="Disponibilita_Stazione" class="form-label">Disponibilita Stazione</label>
                 <input type="text" class="form-control" id="Disponibilità Stazione" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
