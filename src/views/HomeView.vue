@@ -65,7 +65,7 @@
               </div>
               <div class="mb-3">
                 <label for="Disponibilita_Stazione" class="form-label">Disponibilita Stazione</label>
-                <input type="text" class="form-control" id="Disponibilità Stazione" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="Disponibilità Stazione" placeholder="Privato con accesso pubblico">
               </div>
               <div class="mb-3">
                 <label for="Accessibilita_Stazione" class="form-label">Accessibilita Stazione</label>
