@@ -61,7 +61,7 @@
               </div>
               <div class="mb-3">
                 <label for="Sostenibilita" class="form-label">Sostenibilita</label>
-                <input type="text" class="form-control" id="Sostenibilita" v-model="stations[0].sostebilita" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Sostenibilita" v-model="stations[0].sostenibilita" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Disponibilita_Stazione" class="form-label">Disponibilita Stazione</label>
@@ -69,7 +69,7 @@
               </div>
               <div class="mb-3">
                 <label for="Accessibilita_Stazione" class="form-label">Accessibilita Stazione</label>
-                <input type="text" class="form-control" id="Accessibilita Stazione" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Accessibilita Stazione" v-model="stations[0].accessibilita_stazione" placeholder="Another input placeholder">
               </div>
 
             </div>
