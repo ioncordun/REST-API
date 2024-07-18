@@ -81,8 +81,7 @@
               </div>
               <div class="mb-3">
                 <label for="Tipologia_Punto_Prelievo_Energia" class="form-label">Tipologia Punto Prelievo Energia</label>
-                <input type="text" class="form-control" id="Tipologia Punto Prelievo Energia"
-                       placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="Tipologia Punto Prelievo Energia" v-model="stations[0].punti_prelievo[0].Tipologia_Punto_Prelievo_Energia" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Potenza_Punto_Prelievo_Energia" class="form-label">Potenza Punto Prelievo Energia</label>
