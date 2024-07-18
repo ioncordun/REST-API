@@ -156,8 +156,7 @@ export default {
         console.log(data)
         this.operatore = data.operatore
         this.sito_operatore = data.sito_operatore
-        console.log(data)
-
+        
         this.stations[0].id_stazione = data.stations[0].id_stazione
         this.stations[0].nome_stazione = data.stations[0].nome_stazione
         this.stations[0].cap = data.stations[0].cap
