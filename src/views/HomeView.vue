@@ -155,11 +155,23 @@ export default {
 
         this.stations[0].id_stazione = data.stations[0].id_stazione
         this.stations[0].nome_stazione = data.stations[0].nome_stazione
-        this.stations[0].tipo_indirizzo = data.stations[0].tipo_indirizzo
         this.stations[0].cap = data.stations[0].cap
         this.stations[0].lat = data.stations[0].lat
         this.stations[0].lng = data.stations[0].lng
-
+        this.stations[0].tipo_indirizzo = data.stations[0].tipo_indirizzo
+        this.stations[0].indirizzo = data.stations[0].indirizzo
+        this.stations[0].comune = data.stations[0].comune
+        this.stations[0].regione = data.stations[0].regione
+        this.stations[0].provincia = data.stations[0].provincia
+        this.stations[0].sostenibilita = data.stations[0].sostenibilita
+        this.stations[0].disponibilità_stazione = data.stations[0].disponibilità_stazione
+        this.stations[0].accessibilità_stazione = data.stations[0].accessibilità_stazione
+          
+          
+          
+          
+          
+          
 
         console.log(data.stations[0].punti_prelievo[0]);
         this.stations[0].punti_prelievo[0].id_punto_prelievo = data.stations[0].punti_prelievo[0].id_punto_prelievo
