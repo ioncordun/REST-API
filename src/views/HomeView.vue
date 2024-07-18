@@ -21,7 +21,7 @@
               </div>
               <div class="mb-3">
                 <label for="ID_Stazione" class="form-label">ID Stazione</label>
-                <input type="text" class="form-control" id="ID Stazione" v-model="stations.id_stazione" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="ID Stazione" v-model="stations[0].id_stazione" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Nome_Stazione" class="form-label">Nome Stazione</label>
@@ -33,11 +33,11 @@
               </div>
               <div class="mb-3">
                 <label for="LAT" class="form-label">LAT</label>
-                <input type="text" class="form-control" id="LAT" v-model="stations.lat" placeholder="Another input placeholder">
+                <input type="text" class="form-control" id="LAT" v-model="stations[0].lat" placeholder="Another input placeholder">
               </div>
               <div class="mb-3">
                 <label for="LNG" class="form-label">LNG</label>
-                <input type="text" class="form-control" id="LNG" v-model="stations.lng" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="LNG" v-model="stations[0].lng" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
                 <label for="Tipo_Indirizzo" class="form-label">Tipo Indirizzo</label>
