@@ -29,7 +29,7 @@
               </div>
               <div class="mb-3">
                 <label for="CAP" class="form-label">CAP</label>
-                <input type="text" class="form-control" id="CAP" v-model="stations.cap" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="CAP" v-model="stations[0].cap" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
                 <label for="LAT" class="form-label">LAT</label>
