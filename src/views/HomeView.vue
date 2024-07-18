@@ -85,7 +85,7 @@
               </div>
               <div class="mb-3">
                 <label for="Potenza_Punto_Prelievo_Energia" class="form-label">Potenza Punto Prelievo Energia</label>
-                <input type="text" class="form-control" id="Potenza Punto Prelievo Energia" v-model="stations[0].punti_prelievo[0].Potenza_Punto_Prelievo_Energia" placeholder="Example input placeholder">
+                <input type="text" class="form-control" id="Potenza Punto Prelievo Energia" v-model="stations[0].punti_prelievo[0].potenza_punto_prelievo_energia" placeholder="Example input placeholder">
               </div>
             </div>
           </div>
